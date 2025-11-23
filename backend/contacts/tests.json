@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Get user contacts and groups",
+      "method": "GET",
+      "path": "/?user_id=1",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "contacts": "array",
+        "groups": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
